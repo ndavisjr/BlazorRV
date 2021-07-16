@@ -3,22 +3,9 @@
 @using GoogleMaps.LocationServices
 
 <style>
-    input[type=text] {
-        width: 100%;
-        padding: 12px;
-        border: none;
-        border-bottom: 2px solid gray;
-        resize: vertical;
-    }
+ 
 
-    input[type=text]:focus {
-        border: none;
-    }
-
-    button {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+   
 
     .localConditions {
         margin-top: 20px;
@@ -33,12 +20,15 @@
     }
 </style>
 
-<h1>Forecast for your Destination</h1>
-
 <!-- Get location -->
-<div class="row">
-    <input @bind="location" type="text" placeholder="City, State Code (ex: New York, NY)" @onkeyup="GetWxInfo">
-    <button class="btn btn-primary" @onclick="GetWxInfo">GO</button>
+<div class="jumbotron">
+    <h1 class="display-4">Forecast for your Destination</h1>
+    <div class="input-group mb-3">
+    <input @onkeyup="GetWxInfo" @bind="location" type="text" class="form-control" placeholder="Example: Galveston, TX or 77551" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <button @onclick="GetWxInfo" class="btn btn-outline-secondary" type="button">Go</button>
+    </div>
+    </div>
 </div>
 
 <div class="localConditions">

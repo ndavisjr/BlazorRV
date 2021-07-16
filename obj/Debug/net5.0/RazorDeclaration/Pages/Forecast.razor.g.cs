@@ -98,7 +98,7 @@ using GoogleMaps.LocationServices;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 126 "C:\Users\ndavisjr\Desktop\BlazorRV\Pages\Forecast.razor"
+#line 116 "C:\Users\ndavisjr\Desktop\BlazorRV\Pages\Forecast.razor"
        
     private string apikey = "445c6319af922ff980fcf2a1cbb6b22e";
     private string location, city, state, url;
