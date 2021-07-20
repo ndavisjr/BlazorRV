@@ -1,5 +1,54 @@
 @page "/inventory"
+@inject HttpClient Http
 
-<h1>Hello, world!</h1>
 
-Inventory page.
+<h1>Inventory</h1>
+
+@if (inventory == null)
+{
+    <p><em>There are no inventory items</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Purchase Price ($)</th>
+                <th>Purchased At</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in inventory)
+            {
+                <tr>
+                    <td>@item.ItemName</td>
+                    <td>@item.PurchasedPrice</td>
+                    <td>@item.PurchasedFrom</td>
+                    <td>@item.Notes</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+    private InventoryItem[] inventory;
+
+    protected override async Task OnInitializedAsync()
+    {
+        inventory = await Http.GetFromJsonAsync<InventoryItem[]>("sample-data/inventory.json");
+    }
+
+    public class InventoryItem
+    {
+        public int Id { get; set; }
+        public string ItemName { get; set; }
+        public string PurchasedFrom { get; set; }
+        public double PurchasedPrice { get; set; }
+        public string Notes { get; set; }
+    }
+}

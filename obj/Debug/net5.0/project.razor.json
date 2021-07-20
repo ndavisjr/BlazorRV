@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\BlazorRV.csproj",
+  "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\BlazorRV.csproj",
   "Configuration": {
     "ConfigurationName": "Default",
     "LanguageVersion": "5.0",
@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1584277977,
+        "HashCode": -1289832885,
         "Kind": "Components.Component",
-        "Name": "BlazorRV.Pages.Index",
+        "Name": "BlazorRV.Pages.Counter",
         "AssemblyName": "BlazorRV",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Pages.Index"
+          "Common.TypeName": "BlazorRV.Pages.Counter"
         }
       },
       {
-        "HashCode": -1417952544,
+        "HashCode": 963515283,
         "Kind": "Components.Component",
-        "Name": "BlazorRV.Pages.Index",
+        "Name": "BlazorRV.Pages.Counter",
         "AssemblyName": "BlazorRV",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorRV.Pages.Index"
+            "TagName": "BlazorRV.Pages.Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Pages.Index",
+          "Common.TypeName": "BlazorRV.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -70,39 +70,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorRV.Pages.Inventory",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1272639734,
-        "Kind": "Components.Component",
-        "Name": "BlazorRV.Pages.Checklists",
-        "AssemblyName": "BlazorRV",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Checklists"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Pages.Checklists"
-        }
-      },
-      {
-        "HashCode": -1239566893,
-        "Kind": "Components.Component",
-        "Name": "BlazorRV.Pages.Checklists",
-        "AssemblyName": "BlazorRV",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorRV.Pages.Checklists"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Pages.Checklists",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -173,35 +140,121 @@
         }
       },
       {
-        "HashCode": -1289832885,
+        "HashCode": -1272639734,
         "Kind": "Components.Component",
-        "Name": "BlazorRV.Pages.Counter",
+        "Name": "BlazorRV.Pages.Checklists",
         "AssemblyName": "BlazorRV",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "Checklists"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Pages.Counter"
+          "Common.TypeName": "BlazorRV.Pages.Checklists"
         }
       },
       {
-        "HashCode": 963515283,
+        "HashCode": -1239566893,
         "Kind": "Components.Component",
-        "Name": "BlazorRV.Pages.Counter",
+        "Name": "BlazorRV.Pages.Checklists",
         "AssemblyName": "BlazorRV",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorRV.Pages.Counter"
+            "TagName": "BlazorRV.Pages.Checklists"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Pages.Counter",
+          "Common.TypeName": "BlazorRV.Pages.Checklists",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 358500905,
+        "Kind": "Components.Component",
+        "Name": "BlazorRV.Pages.ChecklistDetails",
+        "AssemblyName": "BlazorRV",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChecklistDetails"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChecklistId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "ChecklistId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorRV.Pages.ChecklistDetails"
+        }
+      },
+      {
+        "HashCode": -1891586396,
+        "Kind": "Components.Component",
+        "Name": "BlazorRV.Pages.ChecklistDetails",
+        "AssemblyName": "BlazorRV",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorRV.Pages.ChecklistDetails"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChecklistId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "ChecklistId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorRV.Pages.ChecklistDetails",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1584277977,
+        "Kind": "Components.Component",
+        "Name": "BlazorRV.Pages.Index",
+        "AssemblyName": "BlazorRV",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorRV.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -1417952544,
+        "Kind": "Components.Component",
+        "Name": "BlazorRV.Pages.Index",
+        "AssemblyName": "BlazorRV",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorRV.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorRV.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -268,6 +321,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorRV.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -688722300,
+        "Kind": "Components.Component",
+        "Name": "BlazorRV.Shared.NavMenu",
+        "AssemblyName": "BlazorRV",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorRV.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -742657098,
+        "Kind": "Components.Component",
+        "Name": "BlazorRV.Shared.NavMenu",
+        "AssemblyName": "BlazorRV",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorRV.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorRV.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -364,39 +450,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "BlazorRV.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -688722300,
-        "Kind": "Components.Component",
-        "Name": "BlazorRV.Shared.NavMenu",
-        "AssemblyName": "BlazorRV",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -742657098,
-        "Kind": "Components.Component",
-        "Name": "BlazorRV.Shared.NavMenu",
-        "AssemblyName": "BlazorRV",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorRV.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorRV.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13088,58 +13141,63 @@
   "RootNamespace": "BlazorRV",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Pages\\Budgeting.razor",
-      "TargetPath": "Pages\\Budgeting.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Pages\\Checklists.razor",
-      "TargetPath": "Pages\\Checklists.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Pages\\Forecast.razor",
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\Forecast.razor",
       "TargetPath": "Pages\\Forecast.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\Pages\\Inventory.razor",
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\Inventory.razor",
       "TargetPath": "Pages\\Inventory.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\BlazorRV\\App.razor",
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\Budgeting.razor",
+      "TargetPath": "Pages\\Budgeting.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\ChecklistDetails.razor",
+      "TargetPath": "Pages\\ChecklistDetails.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\FetchData.razor",
+      "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\ndavisjr\\Desktop\\workspace\\BlazorRV\\Pages\\Checklists.razor",
+      "TargetPath": "Pages\\Checklists.razor",
       "FileKind": "component"
     }
   ],

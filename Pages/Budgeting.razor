@@ -1,5 +1,49 @@
 @page "/budgeting"
+@inject HttpClient Http
 
-<h1>Hello, world!</h1>
+<h1>Budgeting</h1>
 
-budgeting page.
+@if (expenses == null)
+{
+    <p><em>There are no expenses</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Expense</th>
+                <th>Amount ($)</th>
+                <th>Expense Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var expense in expenses)
+            {
+                <tr>
+                    <td>@expense.ExpsenseName</td>
+                    <td>@expense.Amount</td>
+                    <td>@expense.Category</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private Expenses[] expenses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        expenses = await Http.GetFromJsonAsync<Expenses[]>("sample-data/expenses.json");
+    }
+
+    public class Expenses
+    {
+        public int Id { get; set; }
+        public string ExpsenseName { get; set; }
+        public double Amount { get; set; }
+        public string Category { get; set; }
+    }
+}

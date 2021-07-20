@@ -1,0 +1,71 @@
+@page "/checklist/{ChecklistId:int}"
+@inject HttpClient Http
+
+
+
+@if (checklists == null)
+{
+    <p>There are no details to display</p>
+}
+else
+{
+
+    @foreach (var checklist in checklists)
+    {
+        <h1>@checklist.Name Checklist</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in checklist.ChecklistItems)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Category</td>
+                        <td>@item.Priority</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+}
+
+@code {
+    [Parameter]
+    public int ChecklistId { get; set; }
+    private Checklist[] checklists;
+    //private string url;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // use dummy data for now
+        checklists = await Http.GetFromJsonAsync<Checklist[]>("sample-data/checklists.json");
+
+        // call api to get all checklists
+        @* url = "https://localhost:4445/api/checklists";
+            checklists = await Http.GetFromJsonAsync<Checklist[]>(url); *@
+    }
+
+    public class Checklist
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Category { get; set; }
+        public ChecklistItems[] ChecklistItems { get; set; }
+    }
+
+    public class ChecklistItems
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Category { get; set; }
+        public int Priority { get; set; }
+        public int ChecklistId { get; set; }
+    }
+}
